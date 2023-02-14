@@ -21,8 +21,8 @@ public class OracleConfiguration {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
 		dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-		dataSource.setUsername("wassif");
-		dataSource.setPassword("wassif");
+		dataSource.setUsername("ebr");
+		dataSource.setPassword("ebr");
 		dataSource.setUrl("jdbc:oracle:thin:@//localhost:1521/XEPDB1");
 
 		Properties properties = new Properties();

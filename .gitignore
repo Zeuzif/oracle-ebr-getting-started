@@ -11,7 +11,7 @@
 # Eclipse #
 /.project
 /.settings
-bin/**
+bin
 # Maven #
 target/
 /.mvn
@@ -19,3 +19,4 @@ target/
 /.repository
 .flattened-pom.xml
 HELP.md
+/.classpath
