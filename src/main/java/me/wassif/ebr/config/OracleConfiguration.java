@@ -26,7 +26,7 @@ public class OracleConfiguration {
 		dataSource.setUrl("jdbc:oracle:thin:@//localhost:1521/XEPDB1");
 
 		Properties properties = new Properties();
-		properties.setProperty("oracle.jdbc.editionName", "release1");
+		properties.setProperty("oracle.jdbc.editionName", "release2");
 		dataSource.setConnectionProperties(properties);
 
 		log.info("dataSource:{}", dataSource);

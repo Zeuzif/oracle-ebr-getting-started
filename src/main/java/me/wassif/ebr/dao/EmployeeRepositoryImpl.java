@@ -21,7 +21,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 	public Long save(Employee employee) {
 		SimpleJdbcCall caller = new SimpleJdbcCall(template).withCatalogName("EMP_PKG").withFunctionName("add");
 		SqlParameterSource in = new MapSqlParameterSource().addValue("name", employee.getName())
-				.addValue("phone_number", employee.getPhone());
+				.addValue("phone#", employee.getPhone()).addValue("country_code", employee.getCountry_code());
 		return caller.executeFunction(BigDecimal.class, in).longValue();
 	}
 
